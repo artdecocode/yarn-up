@@ -1,0 +1,3 @@
+const yarnUp = require('./')
+
+yarnUp()

@@ -1,2 +1,19 @@
 # yarn-up
-level up dependencies to the latest versions as well as beta, alpha, rc etc.
+
+`yarn-up` is a new Node.js npm package.
+
+## `yarnUp():void`
+
+Call this function to get a result you want.
+
+```js
+const yarnUp = require('yarn-up')
+
+yarnUp()
+```
+
+---
+
+(c) [Sobesednik][1] 2018
+
+[1]: https://mnpjs.org

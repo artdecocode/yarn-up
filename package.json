@@ -1,0 +1,24 @@
+{
+  "name": "yarn-up",
+  "version": "0.1.0",
+  "description": "level up dependencies to the latest versions as well as beta, alpha, rc etc.",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "zoroaster test/spec",
+    "test-watch": "zoroaster test/spec --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Sobesednik/yarn-up.git"
+  },
+  "keywords": ["yarn-up"],
+  "author": "Anton <anton@sobes.io>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Sobesednik/yarn-up/issues"
+  },
+  "homepage": "https://github.com/Sobesednik/yarn-up#readme",
+  "devDependencies": {
+    "zoroaster": "0.4.6"
+  }
+}
