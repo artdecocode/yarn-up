@@ -1,6 +1,6 @@
 {
   "name": "yarn-up",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "level up dependencies to the latest versions as well as beta, alpha, rc etc.",
   "main": "src/index.js",
   "scripts": {
