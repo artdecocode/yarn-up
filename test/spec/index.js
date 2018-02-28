@@ -1,5 +1,4 @@
 const spanwcommand = require('spawncommand')
-const { resolve } = require('path')
 const { throws, equal } = require('zoroaster/assert')
 const context = require('../context')
 const yarnUp = require('../..')
@@ -17,14 +16,14 @@ const yarnUpTestSuite = {
       message: 'Package.json content is not given',
     })
   },
-  async 'spawns the bin'() {
-    const p = spanwcommand(resolve(__dirname, '../../bin/yarn-up'), [], {
+  async 'spawns the bin'({ binPath }) {
+    const p = spanwcommand(binPath, [], {
       stdio: [0, 1, 2],
     })
     await p.promise
   },
-  async 'spawns the bin with args'() {
-    const p = spanwcommand(resolve(__dirname, '../../bin/yarn-up'), [
+  async 'spawns the bin with args'({ binPath }) {
+    const p = spanwcommand(binPath, [
       '--exact',
     ], {
       stdio: [0, 1, 2],
