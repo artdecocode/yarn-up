@@ -63,7 +63,7 @@ promto@1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/promto/-/promto-1.0.1.tgz#0a169fc7bd8f48cef1ee9faeace61a100305a536"
 
-spawncommand@1.1.0:
+spawncommand@1.1.0, spawncommand@^1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/spawncommand/-/spawncommand-1.1.0.tgz#80a56ed3c06ab3b91643cf3f6cef38bf582fdb15"
   dependencies:

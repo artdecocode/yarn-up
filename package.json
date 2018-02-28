@@ -26,5 +26,8 @@
   "homepage": "https://github.com/Sobesednik/yarn-up#readme",
   "devDependencies": {
     "zoroaster": "0.5.3"
+  },
+  "dependencies": {
+    "spawncommand": "1.1.0"
   }
 }
