@@ -68,6 +68,6 @@ warning "zoroaster" is already in "devDependencies". Please remove existing entr
 ![git diff](./illustration.png)
 ---
 
-(c) [Sobesednik][1] 2018
+(c) [sobes.io][1] 2018
 
-[1]: https://mnpjs.org/yarn-up
+[1]: https://sobes.io/node-js
