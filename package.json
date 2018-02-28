@@ -11,7 +11,12 @@
     "type": "git",
     "url": "git://github.com/Sobesednik/yarn-up.git"
   },
-  "keywords": ["yarn-up"],
+  "keywords": [
+    "yarn",
+    "update",
+    "upgrade",
+    "latest"
+  ],
   "author": "Anton <anton@sobes.io>",
   "license": "MIT",
   "bugs": {
@@ -19,6 +24,6 @@
   },
   "homepage": "https://github.com/Sobesednik/yarn-up#readme",
   "devDependencies": {
-    "zoroaster": "0.4.6"
+    "zoroaster": "^0.5.3"
   }
 }
