@@ -7,6 +7,7 @@
     "test": "zoroaster test/spec",
     "test-watch": "zoroaster test/spec --watch"
   },
+  "bin": "bin/yarn-up",
   "repository": {
     "type": "git",
     "url": "git://github.com/Sobesednik/yarn-up.git"
@@ -24,6 +25,6 @@
   },
   "homepage": "https://github.com/Sobesednik/yarn-up#readme",
   "devDependencies": {
-    "zoroaster": "^0.5.3"
+    "zoroaster": "0.5.3"
   }
 }

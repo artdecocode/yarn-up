@@ -23,6 +23,14 @@ const yarnUpTestSuite = {
     })
     await p.promise
   },
+  async 'spawns the bin with args'() {
+    const p = spanwcommand(resolve(__dirname, '../../bin/yarn-up'), [
+      '--exact',
+    ], {
+      stdio: [0, 1, 2],
+    })
+    await p.promise
+  },
 }
 
 module.exports = yarnUpTestSuite

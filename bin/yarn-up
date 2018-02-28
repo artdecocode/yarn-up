@@ -4,9 +4,11 @@ const { resolve } = require('path')
 const up = require('../src')
 const packageJson = require(resolve(process.cwd(), 'package.json'));
 
+const { argv: [,, ...args] } = process;
+
 (async () => {
   try {
-    await up(packageJson)
+    await up(packageJson, args)
   } catch (err) {
     console.log(err)
   }

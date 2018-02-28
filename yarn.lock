@@ -73,7 +73,7 @@ wordwrap@>=0.0.2:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/wordwrap/-/wordwrap-1.0.0.tgz#27584810891456a4171c8d0226441ade90cbcaeb"
 
-zoroaster@^0.5.3:
+zoroaster@0.5.3:
   version "0.5.3"
   resolved "https://registry.yarnpkg.com/zoroaster/-/zoroaster-0.5.3.tgz#5462a59f5a242caf82b64df7bb0fca6f708a2159"
   dependencies:
