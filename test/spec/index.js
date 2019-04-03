@@ -3,9 +3,7 @@ const { throws, equal } = require('zoroaster/assert')
 const context = require('../context')
 const yarnUp = require('../..')
 
-process.env.ZOROASTER_TIMEOUT = 3000
-
-const yarnUpTestSuite = {
+const T = {
   context,
   'should be a function'() {
     equal(typeof yarnUp, 'function')
@@ -32,4 +30,4 @@ const yarnUpTestSuite = {
   },
 }
 
-module.exports = yarnUpTestSuite
+export default T

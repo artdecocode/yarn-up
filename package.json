@@ -1,33 +1,36 @@
 {
   "name": "yarn-up",
   "version": "1.0.0",
-  "description": "level up dependencies to the latest versions as well as beta, alpha, rc etc.",
+  "description": "Upgrade Dependencies To The Latest Versions Using Yarn.",
   "main": "src/index.js",
   "scripts": {
-    "test": "zoroaster test/spec",
-    "test-watch": "zoroaster test/spec --watch"
+    "t": "zoroaster -a",
+    "test": "yarn t test/spec",
+    "depack": "depack-dev src/bin/yarn-up -c -o bin -a",
+    "e": "alanode"
   },
   "bin": "bin/yarn-up",
   "repository": {
     "type": "git",
-    "url": "git://github.com/Sobesednik/yarn-up.git"
+    "url": "git://github.com/artdecocode/yarn-up.git"
   },
   "keywords": [
     "yarn",
     "update",
     "upgrade",
+    "dependencies",
     "latest"
   ],
-  "author": "Anton <anton@sobes.io>",
+  "author": "Anton <anton@adc.sh>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Sobesednik/yarn-up/issues"
+    "url": "https://github.com/artdecocode/yarn-up/issues"
   },
-  "homepage": "https://github.com/Sobesednik/yarn-up#readme",
+  "homepage": "https://github.com/artdecocode/yarn-up#readme",
   "devDependencies": {
-    "zoroaster": "0.5.3"
+    "spawncommand": "2.1.1",
+    "temp-context": "2.1.2",
+    "zoroaster": "^3.11.3"
   },
-  "dependencies": {
-    "spawncommand": "1.1.0"
-  }
+  "dependencies": {}
 }
