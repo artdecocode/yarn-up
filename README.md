@@ -1,20 +1,19 @@
 # yarn-up
 
-`yarn-up` can be used to upgrade all dependencies to the latest version,
-including saving exact versions.
+`yarn-up` can be used to upgrade all dependencies to the latest versions. It will check if the version is exact, or with a tilda, and spawn `yarn upgrade -E` for exact versions, and `yarn upgrade` for non-fixed versions.
 
 ```
 npm i -g yarn-up
+yarn global add yarn-up
 ```
 
 ```sh
 cd idio # your package
 yarn-up
-# yarn-up --exact
 ```
 
 ```fs
-Offices-iMac:idio user$ yarn-up --exact
+Offices-iMac:idio user$ yarn-up
 yarn upgrade zoroaster@latest koa@latest koa-bodyparser@latest koa-csrf@latest koa-logger@latest koa-multer@latest koa-router@latest koa-session@latest mongoose@latest server-destroy@latest wrote@latest --exact
 yarn upgrade v1.3.2
 [1/5] 🔍  Validating package.json...
@@ -59,15 +58,16 @@ success Saved 35 new dependencies.
 ├─ wordwrap@1.0.0
 ├─ wrote@1.4.0
 └─ zoroaster@0.5.3
-warning "zoroaster" is already in "devDependencies". Please remove existing entry first before adding itto "dependencies".
+warning "zoroaster" is already in "devDependencies". Please remove existing entry first before adding it to "dependencies".
 ✨  Done in 5.61s.
 ```
 
 ## git diff
 
 ![git diff](./illustration.png)
----
 
-(c) [sobes.io][1] 2018
+## Copyright
 
-[1]: https://sobes.io/node-js
+(c) [Art Deco][1] 2019
+
+[1]: https://artd.eco

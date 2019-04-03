@@ -9,7 +9,7 @@
     "depack": "depack-dev src/bin/yarn-up -c -o bin -a",
     "e": "alanode"
   },
-  "bin": "bin/yarn-up",
+  "bin": "bin/yarn-up.js",
   "repository": {
     "type": "git",
     "url": "git://github.com/artdecocode/yarn-up.git"

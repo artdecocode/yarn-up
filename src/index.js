@@ -1,4 +1,4 @@
-import spawn from 'spawncommand'
+import { spawn } from 'child_process'
 
 export default async function run(packageJson) {
   if (packageJson === null || packageJson === undefined) {
@@ -21,14 +21,21 @@ export default async function run(packageJson) {
   if (tildaDeps.length) await runUpgrade(tildaDeps)
 }
 
-const runUpgrade = async (keys, exact) => {
+const runUpgrade = async (keys, exact = false) => {
   const latest = keys.map(s => `${s}@latest`)
 
   const allArgs = ['upgrade', ...latest, ...(exact ? ['-E']: [])]
   process.stdout.write(['yarn', ...allArgs, '\n'].join(' '))
 
-  const proc = spawn('yarn', allArgs, {
-    stdio: 'inherit',
+  await new Promise((r, j) => {
+    const proc = spawn('yarn', allArgs, {
+      stdio: 'inherit',
+    })
+    proc.on('close', () => {
+      r()
+    })
+    proc.on('error', (e) => {
+      j(e)
+    })
   })
-  await proc.promise
 }
