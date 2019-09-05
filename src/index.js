@@ -1,13 +1,15 @@
 import { spawn } from 'child_process'
 
-export default async function run(packageJson) {
+export default async function run(packageJson, exclude = []) {
   if (packageJson === null || packageJson === undefined) {
     throw new Error('Package.json content is not given')
   }
   const { 'devDependencies': devDependencies,
     'dependencies': dependencies } = packageJson
   const total = ({ ...devDependencies, ...dependencies })
-  const keys = Object.keys(total)
+  const keys = Object.keys(total).filter(a => {
+    return !exclude.includes(a)
+  })
 
   const [exactDeps, tildaDeps] = keys.reduce(([e, t], key) => {
     const val = total[key]
@@ -28,9 +30,9 @@ const runUpgrade = async (keys, exact = false) => {
   process.stdout.write(['yarn', ...allArgs, '\n'].join(' '))
 
   await new Promise((r, j) => {
-    const proc = spawn('yarn', allArgs, {
+    const proc = spawn('yarn', allArgs, /** @type {!child_process.SpawnOptions} */ ({
       stdio: 'inherit',
-    })
+    }))
     proc.on('close', () => {
       r()
     })

@@ -67,6 +67,11 @@ alamode@^3.0.0:
   resolved "https://registry.yarnpkg.com/alamode/-/alamode-3.0.0.tgz#d83b1939cdb823665b850f4ee1d2255be854d058"
   integrity sha512-rKxzjI4FG2dDrL13xGdvEUmLsaz3TUwm5/JwRzJ+5AhXs5pI/tGbsvmvJ9rHtkPTpMXfj4sf1RFZGmgbFIhBFg==
 
+argufy@^1.7.1:
+  version "1.7.1"
+  resolved "https://registry.yarnpkg.com/argufy/-/argufy-1.7.1.tgz#9ce00778d9d404e083c5e5dd0ac1677c950d4d4b"
+  integrity sha512-xsy9ooVGfFn0V2J7IbsCPg5Hx6Qw93jnBMl/I35qt9lRS+53ioLdAOvStYSdI6sdCCTnrw1fZFR5m16FIcfPCg==
+
 catchment@^3.2.3, catchment@^3.3.0:
   version "3.3.0"
   resolved "https://registry.yarnpkg.com/catchment/-/catchment-3.3.0.tgz#e57eb70183d6a75ee71da0cb8ec2e76ac01317d2"
@@ -74,6 +79,15 @@ catchment@^3.2.3, catchment@^3.3.0:
   dependencies:
     "@artdeco/clean-stack" "^1.1.1"
     erotic "^2.1.0"
+
+documentary@^1.32.2:
+  version "1.32.2"
+  resolved "https://registry.yarnpkg.com/documentary/-/documentary-1.32.2.tgz#4ee674dbab622bd64b6c625668e3680f43807330"
+  integrity sha512-WvfCNlz585ryP4YF+Wac9wxv8VTi3ePR2q9RNvUmTNrE0ifz8jDmiQxgkv5KeieL8bf4XBn7dQYQ1O6eRkwUyA==
+  dependencies:
+    alamode "^3.0.0"
+    preact "8.5.2"
+    typal "^1.22.1"
 
 erotic@^2.1.0:
   version "2.1.1"
@@ -93,6 +107,11 @@ pedantry@^2.3.1:
   version "2.5.0"
   resolved "https://registry.yarnpkg.com/pedantry/-/pedantry-2.5.0.tgz#02b2689ef64e87a1f36c731a400d305e80e96a54"
   integrity sha512-LU0IjJV+gayov2HTguIv5izijEZFB01Beq9+wwzHuFqSkLRMMg9pG7PfHzssZV1oJIfaZqWMitGwTDo8kuRHKg==
+
+preact@8.5.2:
+  version "8.5.2"
+  resolved "https://registry.yarnpkg.com/preact/-/preact-8.5.2.tgz#2f532da485287c07369e08150cf4d23921a09789"
+  integrity sha512-37tlDJGq5IQKqGUbqPZ7qPtsTOWFyxe+ojAOFfzKo0dEPreenqrqgJuS83zGpeGAqD9h9L9Yr7QuxH2W4ZrKxg==
 
 spawncommand@2.2.0:
   version "2.2.0"
@@ -114,6 +133,11 @@ temp-context@2.1.3:
     catchment "^3.2.3"
     makepromise "^3.0.3"
     pedantry "^2.3.1"
+
+typal@^1.22.1:
+  version "1.22.3"
+  resolved "https://registry.yarnpkg.com/typal/-/typal-1.22.3.tgz#e5b3a38778ecff7d96ff6205d7b8a34f9b728f94"
+  integrity sha512-4ZYAmGH7r906rHJGDvlsYGqHWYYC7sS1FJLYakUt/tJDyz5nvFakF26Kvl+1S5YL4yLvCcFcBbSz0J+RXrKu0Q==
 
 zoroaster@^4.1.2:
   version "4.1.2"

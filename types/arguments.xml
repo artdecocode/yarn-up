@@ -1,0 +1,5 @@
+<arguments>
+  <arg name="exclude" short="e">
+    Comma-separated packages to exclude.
+  </arg>
+</arguments>

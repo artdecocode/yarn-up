@@ -68,20 +68,7 @@ warning "zoroaster" is already in "devDependencies". Please remove existing entr
 
 ## Arguments
 
-<table>
- <thead>
-  <tr>
-   <th>Argument</th> 
-   <th>Short</th>
-   <th>Description</th>
-  </tr>
- </thead>
-  <tr>
-   <td>--exclude</td>
-   <td>-e</td>
-   <td>Comma-separated packages to exclude.</td>
-  </tr>
-</table>
+<argufy>types/arguments.xml</argufy>
 
 ## Copyright
 
