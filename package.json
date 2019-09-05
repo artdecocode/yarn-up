@@ -12,6 +12,9 @@
     "args": "argufy -o src/bin/get-args.js",
     "dev": "node src/bin"
   },
+  "files": [
+    "compile"
+  ],
   "bin": "compile/yarn-up.js",
   "repository": {
     "type": "git",
