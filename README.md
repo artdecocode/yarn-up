@@ -81,6 +81,11 @@ warning "zoroaster" is already in "devDependencies". Please remove existing entr
    <td>-e</td>
    <td>Comma-separated packages to exclude.</td>
   </tr>
+  <tr>
+   <td>--upgrade</td>
+   <td>-u</td>
+   <td>Run <code>yarn upgrade</code> after the update.</td>
+  </tr>
 </table>
 
 ## Copyright

@@ -2,4 +2,7 @@
   <arg name="exclude" short="e">
     Comma-separated packages to exclude.
   </arg>
+  <arg boolean name="upgrade" short="u">
+    Run `yarn upgrade` after the update.
+  </arg>
 </arguments>
