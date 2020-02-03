@@ -1,4 +1,4 @@
-import { spawn } from 'child_process'
+import spawn from 'spawncommand'
 
 export default async function run(packageJson, exclude = []) {
   if (packageJson === null || packageJson === undefined) {
@@ -29,15 +29,14 @@ const runUpgrade = async (keys, exact = false) => {
   const allArgs = ['upgrade', ...latest, ...(exact ? ['-E']: [])]
   process.stdout.write(['yarn', ...allArgs, '\n'].join(' '))
 
-  await new Promise((r, j) => {
-    const proc = spawn('yarn', allArgs, /** @type {!child_process.SpawnOptions} */ ({
-      stdio: 'inherit',
-    }))
-    proc.on('close', () => {
-      r()
-    })
-    proc.on('error', (e) => {
-      j(e)
-    })
-  })
+  const { promise } = spawn('yarn', allArgs, /** @type {!child_process.SpawnOptions} */ ({
+    shell: process.platform == 'win32',
+    stdio: 'inherit',
+  }))
+  await promise
 }
+
+/**
+ * @suppress {nonStandardJsDocs}
+ * @typedef {import('child_process').SpawnOptions} child_process.SpawnOptions
+ */
