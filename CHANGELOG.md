@@ -1,5 +1,9 @@
 ## 3 February 2019
 
+### [1.4.1](https://github.com/artdecocode/yarn-up/compare/v1.4.0...v1.4.1)
+
+- [fix] Pass shell to upgrade also.
+
 ### [1.4.0](https://github.com/artdecocode/yarn-up/compare/v1.3.1...v1.4.0)
 
 - [fix] Pass shell for Windows.
