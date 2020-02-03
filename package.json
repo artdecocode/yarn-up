@@ -1,6 +1,6 @@
 {
   "name": "yarn-up",
-  "version": "1.4.0",
+  "version": "1.4.1",
   "description": "Upgrade Dependencies To The Latest Versions Using Yarn.",
   "main": "src/index.js",
   "scripts": {
