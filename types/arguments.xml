@@ -5,4 +5,10 @@
   <arg boolean name="upgrade" short="u">
     Run `yarn upgrade` after the update.
   </arg>
+  <arg boolean name="help" short="h">
+    Display usage information.
+  </arg>
+  <arg boolean name="version" short="v">
+    Show version number.
+  </arg>
 </arguments>
