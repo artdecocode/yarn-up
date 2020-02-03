@@ -1,3 +1,10 @@
+## 3 February 2019
+
+### [1.4.0](https://github.com/artdecocode/yarn-up/compare/v1.3.1...v1.4.0)
+
+- [fix] Pass shell for Windows.
+- [feature] Add help and version arguments.
+
 ## 6 September 2019
 
 ### [1.3.1](https://github.com/artdecocode/yarn-up/compare/v1.3.0...v1.3.1)
