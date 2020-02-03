@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 import { resolve } from 'path'
-import { spawn } from 'child_process'
+import spawn from 'spawncommand'
 import { reduceUsage } from 'argufy'
 import usually from 'usually'
 import { _exclude, _upgrade, _help, _version, argsConfig } from './get-args'
@@ -25,7 +25,13 @@ const packageJson = require(resolve(process.cwd(), 'package.json'))
 ;(async () => {
   try {
     await up(packageJson, _exclude ? _exclude.split(',') : undefined)
-    if (_upgrade) spawn('yarn', ['upgrade'])
+    if (_upgrade) {
+      const { promise } = spawn('yarn', ['upgrade'], /** @type {!child_process.SpawnOptions} */ ({
+        shell: process.platform == 'win32',
+        stdio: 'inherit',
+      }))
+      await promise
+    }
   } catch (err) {
     console.log(err)
   }
