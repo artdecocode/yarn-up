@@ -86,6 +86,16 @@ warning "zoroaster" is already in "devDependencies". Please remove existing entr
    <td>-u</td>
    <td>Run <code>yarn upgrade</code> after the update.</td>
   </tr>
+  <tr>
+   <td>--help</td>
+   <td>-h</td>
+   <td>Display usage information.</td>
+  </tr>
+  <tr>
+   <td>--version</td>
+   <td>-v</td>
+   <td>Show version number.</td>
+  </tr>
 </table>
 
 ## Copyright
