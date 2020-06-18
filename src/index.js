@@ -8,7 +8,7 @@ export default async function run(packageJson, exclude = []) {
     'dependencies': dependencies } = packageJson
   const total = ({ ...devDependencies, ...dependencies })
   const keys = Object.keys(total).filter(a => {
-    return !exclude.includes(a)
+    return !exclude.includes(a.trim())
   })
 
   const [exactDeps, tildaDeps] = keys.reduce(([e, t], key) => {
